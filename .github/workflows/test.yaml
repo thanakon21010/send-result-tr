@@ -1,0 +1,10 @@
+name: First Run
+
+on : push
+
+jobs : 
+  scan_syntax:
+    run-on: self-hosted
+    steps:
+      - name: Test Message
+        uses: echo 'hello'
