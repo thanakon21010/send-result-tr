@@ -4,7 +4,11 @@ on : push
 
 jobs : 
   scan_syntax:
-    runs-on: self-hosted
+    # runs-on: self-hosted
+    runs-on: ubuntu-latest
+    container:
+      image: python:3.10
+      
     steps:
       - name: Checkout Code
         uses: actions/checkout@v3
