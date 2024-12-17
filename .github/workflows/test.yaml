@@ -8,7 +8,7 @@ jobs :
     runs-on: ubuntu-latest
     container:
       image: python:3.10
-      
+
     steps:
       - name: Checkout Code
         uses: actions/checkout@v3
@@ -19,6 +19,8 @@ jobs :
       # - name: Install Robocop
       #   run: |
       #     pip install robotframework-robocop
+      - name: Install Robocop      #when no robocop on server
+        run: pip install robotframework-robocop
       - name: Run Robocop
         run: robocop
       - name: Check dryrun robot
