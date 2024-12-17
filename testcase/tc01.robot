@@ -1,2 +1,2 @@
 *** Test Cases ***
-validate user details
+Validate user details
