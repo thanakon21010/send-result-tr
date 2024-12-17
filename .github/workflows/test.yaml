@@ -15,5 +15,7 @@ jobs :
       # - name: Install Robocop
       #   run: |
       #     pip install robotframework-robocop
-      - name: Run Robocop Lint Check
+      - name: Run Robocop
         run: robocop
+      - name: Check dryrun robot
+        run: robot --dryrun testcase/.
