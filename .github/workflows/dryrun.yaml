@@ -1,0 +1,27 @@
+name: Robot Framework Dry Run
+
+on:
+  pull_request:  # Trigger เมื่อเปิด PR
+    branches:
+      - main  # หรือ branch ที่ต้องการ
+
+jobs:
+  dryrun:
+    runs-on: ubuntu-latest  # ใช้ Ubuntu เป็น runner
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3  # ดึงโค้ดจาก repo
+
+      # - name: Set up Python
+      #   uses: actions/setup-python@v4
+      #   with:
+      #     python-version: 3.9  # หรือเวอร์ชันที่ต้องการ
+
+      # - name: Install dependencies
+      #   run: |
+      #     pip install robotframework
+      #     pip install robotframework-seleniumlibrary  # ถ้าใช้ Selenium
+
+      - name: Run Robot Framework in Dry Run Mode
+        run: |
+          robot --dryrun testcase/  # รัน dryrun ที่โฟลเดอร์ test cases
