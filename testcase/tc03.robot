@@ -7,4 +7,4 @@ echo name
 *** Test Cases ***
 Validate user details
     echo name       hi
-    echo name    
+    echo name 
