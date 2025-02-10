@@ -8,3 +8,4 @@ echo name
 Validate user details
     echo name       hi
     echo name 
+    echo name 
