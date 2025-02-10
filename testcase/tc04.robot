@@ -7,4 +7,4 @@ echo name
 *** Test Cases ***
 Validate user details : tc-04
     echo name       hi
-    echo name  
+    echo name   
