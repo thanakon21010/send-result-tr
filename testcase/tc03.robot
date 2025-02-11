@@ -1,11 +1,12 @@
 *** Keywords ***
-echo name
+Echo name
+    [documentation]    doc
     [Arguments]     ${name}
-    log to console       ${name}
-    log    ${name}
+    Log to console       ${name}
+    Log    ${name}
 
 *** Test Cases ***
 Validate user details
-    echo name       hi
-    echo name  
-    echo name 
+    Echo name       hi
+    Echo name      hi
+    Echo name    hi
