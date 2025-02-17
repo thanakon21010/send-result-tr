@@ -6,7 +6,6 @@ Echo name
     Log    ${name}
 
 *** Test Cases ***
-Validate user details
-    Echo name       hi
-    Echo name      hi
+Validate user details : tc-04
+    Echo name    hi
     Echo name    hi
